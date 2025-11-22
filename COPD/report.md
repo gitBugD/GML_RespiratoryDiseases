@@ -42,3 +42,41 @@ As said before, in this part, we executed our notebook without the counry code a
 
 ### Best features
 ![1021 prev best features](./outputs_prev/1021_prev_best_features_v1_1.png)
+
+### Conclusion
+
+Now, we can see that `Random Forest` `XGBoost` use a lot `Surface area (sq. km)` for their predictions. This value is also correlated with the country and doesn't bring clear information. It may be interesting to replace this with the ratio `population per sq. km` because the density of population tells us more about the people environment. 
+
+## Suppression of total variables
+
+In this part, we deleted `GDP (current US$)`, `Surface area (sq. km)`, `Total area (Square Km)` and `Population, total` because they added bias in our models and modified `Sulphur oxides (tonnes)` and `Total sales of agricultural pesticides (tonnes)` by dividing them with the number of population to get a ratio. We obtained better metrics and more logical results.
+
+### Conufsion matrix
+![1021_prev_confusion_matrix](./outputs_prev/1021_prev_conf_matrix_v1_2.png)
+
+### Metrics
+![1021 prev metrics](./outputs_prev/1021_prev_metrics_v1_2.png)
+
+### Best features
+![1021 prev best features](./outputs_prev/1021_prev_best_features_v1_2.png)
+
+### Conclusion
+
+Because XGBoost seems to love biased variables, we looked at the values of t2m and others temperatures variables, and we saw that these values have too much precision. For exemple, one of them is `298.236619`. Six digits after comma is useless. We will round them at one value after comma to follow the meteorological standard. We will also delete `d2m` and `skt` because they have a correlation of almost 1 with `t2m`.
+
+## Modifying temperatures
+
+Even after rounding them to 1 digit after comma, we got almost 350 unique temperatures. It was too much and this also brought bias. So we diced to roung them directly to the unit. We obtained the following results.
+
+### Conufsion matrix
+![1021_prev_confusion_matrix](./outputs_prev/1021_prev_conf_matrix_v1_3.png)
+
+### Metrics
+![1021 prev metrics](./outputs_prev/1021_prev_metrics_v1_3.png)
+
+### Best features
+![1021 prev best features](./outputs_prev/1021_prev_best_features_v1_3.png)
+
+### Conclusion
+
+Now, we see no real bias. But we should keep analysing each variable one by one to get clear results. We should also follow all the steps before every time we try a new dataset.
