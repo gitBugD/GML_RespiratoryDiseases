@@ -62,7 +62,7 @@ In this part, we deleted `GDP (current US$)`, `Surface area (sq. km)`, `Total ar
 
 ### Conclusion
 
-Because XGBoost seems to love biased variables, we looked at the values of t2m and others temperatures variables, and we saw that these values have too much precision. For exemple, one of them is `298.236619`. Six digits after comma is useless. We will round them at one value after comma to follow the meteorological standard. We will also delete `d2m` and `skt` because they have a correlation of almost 1 with `t2m`.
+Because XGBoost seems to love biased variables, we looked at the values of t2m and others temperatures variables, and we saw that these values have a lot of precision. For exemple, one of them is `298.236619`. Six digits after comma is useless. We will round them at one value after comma to follow the meteorological standard. We will also delete `d2m` and `skt` because they have a correlation of almost 1 with `t2m`. The correlation is logic they all are temperature measurement and having 3 times the same col gives just overfitting. 
 
 ## Modifying temperatures
 
@@ -79,4 +79,16 @@ Even after rounding them to 1 digit after comma, we got almost 350 unique temper
 
 ### Conclusion
 
-Now, we see no real bias. But we should keep analysing each variable one by one to get clear results. We should also follow all the steps before every time we try a new dataset.
+Now, we see that we don't have the same col multiple times.
+
+## u10 problem
+
+The ´u10´ variable is the vector on the west-east axis of the wind speed. A positive value means that the direction is from west to east and vice-versa. The problem with it is that it has a very high correlation of 0.74 with the target. This high correlation should be analyzed and explained. Indeed, it is highly unlikely that the wind direction itself has such a strong direct biological impact on the disease. Instead, this variable acts as a geographical proxy (or confounding variable). Positive values (Westerlies) predominantly characterize temperate zones in the Northern Hemisphere (e.g., Europe, North America), which tend to have aging populations and higher diagnosis rates. Conversely, negative values (Trade Winds) characterize tropical regions. Thus, the model is likely using ´u10´ to implicitly identify the latitude or development level of a country rather than evaluating the genuine physical effect of wind on pollution dispersion.
+
+Conversely, the ´v10´ variable (North-South component) shows much lower importance. This is physically consistent with global atmospheric circulation patterns, which are predominantly zonal (East-West) due to the Earth's rotation. While ´u10´ creates distinct, stable bands separating tropical from temperate regions (and thus correlates with socio-economic factors), ´v10´ is highly variable and often averages out close to zero over a year. Consequently, it fails to act as a distinct geographic identifier for the model.
+
+![correlation scatter plot](./outputs_prev/corr_scatter.png)
+
+### Conclusion
+
+To resolve this bias, we may want to combine ´u10´ and ´v10´ to only have the wind speed instead of the speed and direction. This way, we may get rid of the "proxy" effect. To implement this new column, for each line, we will calculate $\sqrt{u10^2+v10^2}$.
