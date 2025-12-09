@@ -74,29 +74,26 @@ def impute_nans(data: pd.DataFrame):
     
         return result
         
-    cols_to_fill = [
-        "Access to clean fuels and technologies for cooking (% of population)",
-        "Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)",
-        "Gini index",
-        "Poverty headcount ratio at national poverty lines (% of population)",
-        "Renewable electricity output (% of total electricity output)",
-        "Unemployment, total (% of total labor force) (national estimate)",
-        "Total area (Square Km)",
-        "PM10_ConcentrationAvg",
-        "PM25_ConcentrationAvg",
-        "NO2_ConcentrationAvg",
-        "Greenhouse gases (Kg CO2-equivalent Per Person)",
-        "Sulphur oxides (tonnes)",
-        "Total sales of agricultural pesticides (tonnes)",
-        "Share of population who are daily smokers (Pct population)"
-    ]
+    # Automatically detect numeric columns that need filling
+    # Exclude metadata columns like Country Code, Country Name, Year
+    exclude_cols = {"Country Code", "Country Name", "Year", "Disease", "Measure", "Metric"}
+    
+    # Get all columns that are not in the exclusion list
+    cols_to_fill = [col for col in data.columns 
+                   if col not in exclude_cols]
+    
+    # Filter to only include columns that exist and can be converted to numeric
+    df_test = data[cols_to_fill].apply(pd.to_numeric, errors='coerce')
+    cols_to_fill = [col for col in cols_to_fill if df_test[col].notna().any()]
+    
+    print(f"📊 Colonnes détectées pour l'imputation : {len(cols_to_fill)} colonnes")
+    
     df_first_imputation = impute_values(data, cols_to_fill)
-    df_first_imputation.isnull().sum()
 
     df_encoded = encode(df_first_imputation)
     
     # Initialize imputer
-    imp_mean = IterativeImputer(random_state=0)
+    imp_mean = IterativeImputer(random_state=0, max_iter=10, n_nearest_features=15)
 
     # Fit / transform
     df_imputed = imp_mean.fit_transform(df_encoded)
