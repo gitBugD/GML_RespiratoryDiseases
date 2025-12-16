@@ -101,3 +101,63 @@ def impute_nans(data: pd.DataFrame):
     # Rebuild the DataFrame after imputation
     df_imputed = pd.DataFrame(df_imputed, columns=df_encoded.columns, index=df_encoded.index)
     return df_imputed
+
+def impute_nans_no_encoding(data: pd.DataFrame) -> pd.DataFrame:
+    """
+    Impute NaN values for numeric columns only.
+    Categorical columns are left untouched and returned as-is.
+    """
+
+    df = data.copy()
+
+    # -------------------------
+    # Identify columns
+    # -------------------------
+    exclude_cols = {"Year", "Disease", "Measure", "Metric"}
+
+    categorical_cols = [
+        c for c in df.columns
+        if df[c].dtype == "object" and c not in exclude_cols
+    ]
+
+    numeric_cols = [
+        c for c in df.columns
+        if c not in categorical_cols and c not in exclude_cols
+    ]
+
+    # Ensure numeric dtype
+    df[numeric_cols] = df[numeric_cols].apply(pd.to_numeric, errors="coerce")
+
+    # -------------------------
+    # Sort & group-wise ffill/bfill
+    # -------------------------
+    if "Year" in df.columns:
+        df["Year"] = pd.to_numeric(df["Year"], errors="coerce")
+
+    df = df.sort_values(["Country Code", "Year"])
+
+    df[numeric_cols] = (
+        df.groupby("Country Code")[numeric_cols]
+          .transform(lambda g: g.ffill().bfill())
+    )
+
+    # -------------------------
+    # Iterative imputation (numeric only)
+    # -------------------------
+    imp = IterativeImputer(
+        random_state=0,
+        max_iter=5,
+        n_nearest_features=15
+    )
+
+    df[numeric_cols] = imp.fit_transform(df[numeric_cols])
+    assert not df[numeric_cols].isnull().any().any()
+    if df[numeric_cols].isnull().any().any():
+        df[numeric_cols] = df[numeric_cols].fillna(df[numeric_cols].median())
+
+    # -------------------------
+    # Return original structure
+    # -------------------------
+    df_final = df[data.columns]
+
+    return df_final
