@@ -228,8 +228,8 @@ def process_wind_speed(df: pd.DataFrame):
         df_result['Wind_Speed'] = np.sqrt(df_result['u10']**2 + df_result['v10']**2)
         
         # Suppression des composantes vectorielles (sources de biais géographique)
-        df_result = df_result.drop(columns=['u10', 'v10'])
-        print("✅ 'Wind_Speed' calculée. Colonnes 'u10' et 'v10' supprimées.")
+        #df_result = df_result.drop(columns=['u10', 'v10'])
+        print("✅ 'Wind_Speed' calculée. Colonnes 'u10' et 'v10' non supprimées.")
     else:
         print("⚠️ Impossible de calculer la vitesse du vent : 'u10' ou 'v10' manquants.")
         
