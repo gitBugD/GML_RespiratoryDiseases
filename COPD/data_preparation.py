@@ -44,9 +44,100 @@ def trim_outliers(data: pd.DataFrame):
     return result, outliers_result
 
 
+def interpolate_time_series(df: pd.DataFrame, 
+                            group_col: str = 'Country Code', 
+                            time_col: str = 'Year',
+                            cols_to_interpolate: list = None):
+    """
+    Effectue une interpolation linéaire temporelle à l'intérieur de chaque groupe (pays).
+    
+    Cette fonction comble les trous entre deux années connues en utilisant
+    une interpolation linéaire, ce qui respecte la continuité temporelle des données.
+    
+    Args:
+        df: Le DataFrame source (non encodé).
+        group_col: La colonne de regroupement (ex: 'Country Code').
+        time_col: La colonne temporelle pour le tri (ex: 'Year').
+        cols_to_interpolate: Liste des colonnes numériques à interpoler.
+                            Si None, toutes les colonnes numériques sont détectées.
+    
+    Returns:
+        DataFrame avec les valeurs interpolées.
+    """
+    df_result = df.copy()
+    
+    # Vérification des colonnes requises
+    if group_col not in df_result.columns:
+        print(f"⚠️ Colonne de groupe '{group_col}' absente. Interpolation ignorée.")
+        return df_result
+    
+    if time_col not in df_result.columns:
+        print(f"⚠️ Colonne temporelle '{time_col}' absente. Interpolation ignorée.")
+        return df_result
+    
+    # Conversion de Year en numérique si nécessaire
+    df_result[time_col] = pd.to_numeric(df_result[time_col], errors='coerce')
+    
+    # Tri par groupe et temps (essentiel pour l'interpolation)
+    df_result = df_result.sort_values(by=[group_col, time_col]).reset_index(drop=True)
+    
+    # Détection automatique des colonnes numériques si non spécifiées
+    if cols_to_interpolate is None:
+        exclude_cols = {group_col, time_col, 'Country Name', 'Disease', 'Measure', 'Metric'}
+        cols_to_interpolate = [
+            col for col in df_result.columns 
+            if col not in exclude_cols 
+            and pd.api.types.is_numeric_dtype(df_result[col].apply(pd.to_numeric, errors='coerce'))
+        ]
+    
+    # Filtrer les colonnes qui existent réellement
+    cols_to_interpolate = [col for col in cols_to_interpolate if col in df_result.columns]
+    
+    if not cols_to_interpolate:
+        print("⚠️ Aucune colonne numérique à interpoler.")
+        return df_result
+    
+    # Conversion en numérique des colonnes à interpoler
+    for col in cols_to_interpolate:
+        df_result[col] = pd.to_numeric(df_result[col], errors='coerce')
+    
+    # Compteur de valeurs imputées
+    nan_before = df_result[cols_to_interpolate].isna().sum().sum()
+    
+    # Interpolation linéaire vectorisée par groupe
+    # Utilise transform pour appliquer l'interpolation à chaque groupe sans boucle explicite
+    df_result[cols_to_interpolate] = (
+        df_result
+        .groupby(group_col, group_keys=False)[cols_to_interpolate]
+        .transform(lambda group: group.interpolate(
+            method='linear',
+            limit_direction='both',  # Interpole dans les deux directions
+            limit_area=None  # Permet aussi l'extrapolation aux bords si possible
+        ))
+    )
+    
+    # Pour les extrémités restantes, on applique ffill puis bfill au sein de chaque groupe
+    df_result[cols_to_interpolate] = (
+        df_result
+        .groupby(group_col, group_keys=False)[cols_to_interpolate]
+        .transform(lambda group: group.ffill().bfill())
+    )
+    
+    nan_after = df_result[cols_to_interpolate].isna().sum().sum()
+    imputed_count = nan_before - nan_after
+    
+    print(f"📈 Interpolation temporelle : {imputed_count} valeurs imputées sur {len(cols_to_interpolate)} colonnes.")
+    print(f"   NaN restants après interpolation : {nan_after}")
+    
+    return df_result
+
+
 def impute_nans(data: pd.DataFrame):
     """
-    Impute NaNs values with meaningful ones, and encode data on the way. 
+    Impute NaNs values with meaningful ones using a hybrid strategy:
+    1. Linear temporal interpolation by country (respects time continuity)
+    2. MICE (IterativeImputer) for remaining NaNs (edges and cross-variable imputation)
+    
     This requires NOT ENCODED DATA (Country Code must still be a string). 
     Encoding will be done inside.
     
@@ -101,8 +192,22 @@ def impute_nans(data: pd.DataFrame):
     
     print(f"📊 Colonnes détectées pour l'imputation : {len(cols_to_fill)} colonnes")
     
-    df_first_imputation = impute_values(data, cols_to_fill)
+    # ===== ÉTAPE 1 : Interpolation temporelle linéaire par pays =====
+    # Cette étape respecte la continuité temporelle des séries chronologiques
+    print("\n🔄 Étape 1/3 : Interpolation temporelle linéaire...")
+    df_interpolated = interpolate_time_series(
+        data, 
+        group_col='Country Code', 
+        time_col='Year',
+        cols_to_interpolate=cols_to_fill
+    )
+    
+    # ===== ÉTAPE 2 : Forward/Backward fill résiduel =====
+    print("\n🔄 Étape 2/3 : Forward/Backward fill résiduel...")
+    df_first_imputation = impute_values(df_interpolated, cols_to_fill)
 
+    # ===== ÉTAPE 3 : MICE pour les NaN restants =====
+    print("\n🔄 Étape 3/3 : Imputation MICE (IterativeImputer)...")
     df_encoded = encode(df_first_imputation)
     
     # Initialize imputer

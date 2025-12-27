@@ -1,0 +1,63 @@
+{
+  "hidden_layers": [
+    128,
+    64,
+    32,
+    16
+  ],
+  "dropout_rate": 0.2,
+  "learning_rate": 0.001,
+  "optimizer": "adam",
+  "l2_reg": 0.0,
+  "use_batch_norm": true,
+  "batch_size": 64,
+  "feature_names": [
+    "Access_to_clean_fuels_and_technologies_for_cooking_(%_of_population)",
+    "Access_to_electricity_(%_of_population)",
+    "Carbon_dioxide_(CO2)_emissions_excluding_LULUCF_per_capita_(t_CO2e/capita)",
+    "Compulsory_education__duration_(years)",
+    "GDP_per_capita_(constant_2015_US$)",
+    "Gini_index",
+    "Life_expectancy_at_birth__total_(years)",
+    "Mortality_rate__infant_(per_1_000_live_births)",
+    "People_using_at_least_basic_sanitation_services_(%_of_population)",
+    "Poverty_headcount_ratio_at_national_poverty_lines_(%_of_population)",
+    "Renewable_electricity_output_(%_of_total_electricity_output)",
+    "Unemployment__total_(%_of_total_labor_force)_(national_estimate)",
+    "Prevalence_tobacco_use",
+    "u10",
+    "v10",
+    "t2m",
+    "sst",
+    "sp",
+    "blh",
+    "PM2.5_pollution",
+    "Physicians_per_1000",
+    "Population_60+_(%)",
+    "Population_40-59_(%)",
+    "Industry_workers_(%)",
+    "Agriculture_workers_(%)",
+    "Wind_Speed",
+    "Population_Density_(per_sq._km)",
+    "CO2_emissions_(per_capita)",
+    "Coal_consumption_(per_capita)",
+    "Energy_use_(per_capita)",
+    "Electricity_use_(per_capita)",
+    "Raw_materials_extracted_(per_capita)",
+    "Oil_consumption_(per_capita)",
+    "Sulfur_emission_(per_capita)"
+  ],
+  "num_features": 34,
+  "num_classes": 3,
+  "class_labels": [
+    "Faible",
+    "Moyen",
+    "\u00c9lev\u00e9"
+  ],
+  "metrics": {
+    "accuracy": 0.8887823585810163,
+    "f1_score": 0.8878899339340591,
+    "precision": 0.8889516988659089,
+    "recall": 0.8887823585810163
+  }
+}

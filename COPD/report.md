@@ -139,13 +139,80 @@ This [article of CHU Lyon](https://www.chu-lyon.fr/bpco-broncho-pneumopathie-chr
 ![9019_prev_metrics_specialized](./outputs_prev/9019_prev_metrics_specialized_2.png)
 
 ### Best features
-![1021 prev best features](./outputs_prev/9019_prev_best_features_specialized_2.png)
+![9019_prev_best_features_specialized_2](./outputs_prev/9019_prev_best_features_specialized_2.png)
 
 ### Conclusion
 In the previous graph, we can observe that we obtained similar scores, which indicates that the models can class the prevalence correctly. Then, if we look more at the most important features, we can see that the best models still give a huge importance to the tobacco use and that lightGBM uses a lot the % of people 60+ and the physicians (doctors) per 1000 people. We also see that people 40-59 is not very important.
 
+## Find the best features in most cases
+The problem with our implementation is that the notebook chooses only the best features for on random seed. Our goal is to find the best features for most cases and rank them. We created new plots which show the top features with the best average score, the most present features, the average importance per model and importance variability of the best models. We also modified the confusion matrix to show the average results in %. The models tested 10 different splits.
+
+### Conufsion matrix
+![9019_prev_conf_matrix_norm_n10](./outputs_prev/9019_prev_conf_matrix_norm_n10.png)
+
+### Metrics
+![9019_prev_metrics_norm_n10](./outputs_prev/9019_prev_metrics_norm_n10.png)
+
+### Best features
+![9019_prev_best_features_total_n10](./outputs_prev/9019_prev_best_features_total_n10.png)
+
+### Conclusion
+
+Now, we can confirm that our models use mostly the tobacco prevalence, population density, people using basic sanitation services, poverty headcount and physicians per 1000.
+
 ## Keep only years with no missing values for tobacco prevalence
 
-## Find the best features in most cases
-The problem with our implementation is that the notebook chooses only the best features for on random seed. Our goal is to find the best features for most cases and rank them.
+The problem with tobacco prevalence was that it had data only for 5 different years (2000, 2005, 2007, 2010 and 2015). So most of the datas were imputed, which means most of them were not correct. Here, we choose to only train our models on years we had data for tobacco. We deleted the years with missing values only after the data imputation so the imputed values are better.
 
+### Conufsion matrix
+![9019_prev_conf_matrix_tobacco_n10](./outputs_prev/9019_prev_conf_matrix_tobacco_n10.png)
+
+### Metrics
+![9019_prev_metrics_tobacco_n10](./outputs_prev/9019_prev_metrics_tobacco_n10.png)
+
+### Best features
+![9019_prev_best_features_tobacco_n10](./outputs_prev/9019_prev_best_features_tobacco_n10.png)
+
+### Conclusion
+
+Firstly, we can see that the F1-score of our best models reduced by 0,1. This seems logic because because the dataset size has been divided by 5 and thus models have less data to train. It is actually reassuring to lose only 0,1 of F1-score by dividing our dataset by 5. It means that our data is robust. Then, if we look at the best features, we can see the population density is still at the top and a new feature appeared : the surface pressure (sp). Then, we still have the same features as before : physicians per 1000 people, tobacco use and people using at least basic sanitation services. Having a strong importance with sp is debatable because it can act as proxy for the country because the surface pression may not change through the years. 
+
+## Updating the data preparation
+
+The problem was that the tobacco data was imputed using a forward fill, which introduced no evolution. To solve this, a robust data pipeline was developed, combining linear temporal interpolation with MICE to generate realistic data for missing years (1990-2019). This hybrid approach prioritizes historical continuity for key risk factors like tobacco use, significantly reducing the noise typically introduced by purely statistical imputation methods.
+
+### Conufsion matrix
+![9019_prev_conf_matrix_new_dp_n10](./outputs_prev/9019_prev_conf_matrix_new_dp_n10.png)
+
+### Metrics
+![9019_prev_metrics_new_dp_n10](./outputs_prev/9019_prev_metrics_new_dp_n10.png)
+
+### Best features
+![9019_prev_best_features_new_dp_n10](./outputs_prev/9019_prev_best_features_new_dp_n10.png)
+
+### Conclusion
+
+We can see that the tobacco use became the most important feature, followed by the other classic best features. We can also see that coal consumption and sulfur emission are pretty important.
+
+## Analyze how the values influence the target
+
+While high predictive accuracy validates our models, the core objective of this study is to understand the drivers of COPD. In this section, we move beyond performance metrics to analyze the directional relationship between environmental factors and disease prevalence. Using SHAP and Partial Dependence Plots, we investigate whether specific variables (such as pollution levels, temperature, or humidity) act as risk factors (positively correlated with prevalence) or protective factors (negatively correlated), effectively mapping the environmental determinants of the disease.
+
+### SVM
+![9019_prev_beeswarm_svm_n10](./outputs_prev/9019_prev_beeswarm_svm_n10.png)
+
+### Random Forest
+![9019_prev_beeswarm_RF_n10](./outputs_prev/9019_prev_beeswarm_RF_n10.png)
+
+### XGBoost
+![9019_prev_beeswarm_XGBoost_n10](./outputs_prev/9019_prev_beeswarm_XGBoost_n10.png)
+
+### LightGBM
+![9019_prev_beeswarm_LightBGM_n10](./outputs_prev/9019_prev_beeswarm_LightBGM_n10.png)
+
+### CatBoost
+![9019_prev_beeswarm_CatBoost_n10](./outputs_prev/9019_prev_beeswarm_CatBoost_n10.png)
+
+### Conclusion
+
+In the previous graphs, we can clearly see the effect of each feature on the COPD prevalence. We can see that the COPD grows with fewer agriculturals worker, more physicians per 1000 capita, higher GDP per capita, lesser population density, more tobacco consumption, fewer electricity use per capita, higher access to clean fuels and technologies for cooking, fewer coal consumption, less compulsory education duration, higher PM2.5_pollution and lesser u10. 
