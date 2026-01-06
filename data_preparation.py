@@ -102,6 +102,45 @@ def impute_nans(data: pd.DataFrame):
     df_imputed = pd.DataFrame(df_imputed, columns=df_encoded.columns, index=df_encoded.index)
     return df_imputed
 
+
+def impute_nans_alt(data: pd.DataFrame):
+    """
+    Impute NaNs values with meaningful ones, and encode data on the way. This requires NOT ENCODED DATA (Country Code must still be a string). Encoding will be done inside.
+    """
+    def impute_values(df, cols_to_fill):
+        df_first_imputation = df.copy()
+
+        df_first_imputation = df_first_imputation.sort_values(["Country Code", "Year"])
+        
+        # Forward/backward fill within each country
+        df_first_imputation[cols_to_fill] = (
+            df_first_imputation.groupby("Country Code")[cols_to_fill]
+                    .transform(lambda g: g.ffill().bfill())
+        )
+
+        df_first_imputation.fillna(df_first_imputation.median(numeric_only=True), inplace=True)
+
+        return df_first_imputation
+
+    def encode(data: pd.DataFrame):
+        """
+        Ensures all columns are numeric
+        """
+        # One-hot encode 'Country Code'
+        result = pd.get_dummies(data, columns=["Country Code"], drop_first=True)
+        
+        # Convert all columns to numeric (coerce errors to NaN)
+        result = result.apply(pd.to_numeric, errors='coerce')
+    
+        return result
+        
+    cols_to_fill = [c for c in data.columns if data[c].count() != len(data.index)]
+    df_first_imputation = impute_values(data, cols_to_fill)
+
+    # Rebuild the DataFrame after imputation
+    df_first_imputation = pd.DataFrame(df_first_imputation, columns=df_first_imputation.columns, index=df_first_imputation.index)
+    return df_first_imputation
+
 def impute_nans_no_encoding(data: pd.DataFrame) -> pd.DataFrame:
     """
     Impute NaN values for numeric columns only.
