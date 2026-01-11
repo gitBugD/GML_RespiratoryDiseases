@@ -1,0 +1,18 @@
+{
+  "units_1": 256,
+  "l2_reg": 0.001,
+  "use_batch_norm_1": false,
+  "dropout_1": 0.30000000000000004,
+  "num_layers": 2,
+  "units_2": 64,
+  "use_batch_norm_2": false,
+  "dropout_2": 0.30000000000000004,
+  "learning_rate": 0.0005,
+  "optimizer": "adam",
+  "units_3": 64,
+  "use_batch_norm_3": true,
+  "dropout_3": 0.2,
+  "units_4": 64,
+  "use_batch_norm_4": true,
+  "dropout_4": 0.1
+}
