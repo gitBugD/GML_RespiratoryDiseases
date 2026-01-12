@@ -1,0 +1,6 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_Surface area (sq. km)_lag14,delta_Surface area (sq. km),1,800,1.4064351768901422,2.553715931949366
+2,"delta_Mortality rate, infant (per 1,000 live births)_lag2","delta_Mortality rate, infant (per 1,000 live births)",2,775,1.1075815753963831,2.0039709764770652
+3,delta_Natural gas production_x_lag18,delta_Natural gas production_x,3,750,0.851670847331935,1.5910528285986132
+4,"delta_Unemployment, total (% of total labor force) (national estimate)_lag12","delta_Unemployment, total (% of total labor force) (national estimate)",4,725,0.643964846276929,1.0328700089091294
+5,delta_Access to electricity (% of population)_lag8,delta_Access to electricity (% of population),5,700,0.4496849951452802,0.9493537132628496

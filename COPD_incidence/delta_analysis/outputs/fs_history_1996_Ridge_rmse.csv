@@ -1,0 +1,18 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_blh_lag1,delta_blh,1,192,1.831216014961781,4.772673542038795
+2,delta_GDP (current US$)_lag3,delta_GDP (current US$),2,186,1.7134609956338955,4.7745015666318915
+3,delta_v10_lag4,delta_v10,3,180,1.6180073599178886,4.705396307613776
+4,delta_Sulfur emission_lag4,delta_Sulfur emission,4,174,1.566896478207635,4.548507221457628
+5,delta_Surface area (sq. km)_lag2,delta_Surface area (sq. km),5,168,1.4958656663282093,4.496410912427589
+6,delta_Raw materials extracted_lag1,delta_Raw materials extracted,6,162,1.463565706415701,4.460350661352374
+7,delta_Natural gas production_y_lag1,delta_Natural gas production_y,7,156,1.4280351925562593,4.059237760636468
+8,delta_u10_lag1,delta_u10,8,150,1.3706600643872753,4.11897211853616
+9,delta_Energy use_lag4,delta_Energy use,9,144,1.3017241814233147,3.1255824016182796
+10,delta_Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)_lag3,delta_Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita),10,138,1.1350025894570326,2.8435112721905877
+11,delta_sst_lag3,delta_sst,11,132,1.0455967806019502,2.1962735350955285
+12,"delta_Population, total_lag6","delta_Population, total",12,126,1.039937993386331,2.1666437066916915
+13,delta_d2m_lag2,delta_d2m,13,120,1.0359365690691849,1.9887203220216945
+14,"delta_Life expectancy at birth, total (years)_lag1","delta_Life expectancy at birth, total (years)",14,114,1.0265109331293405,1.8802786588283595
+15,delta_Electricity use_lag4,delta_Electricity use,15,108,0.9822526013549018,1.8749927363103716
+16,delta_sp_lag5,delta_sp,16,102,0.975914970245763,1.888692456788232
+17,"delta_Compulsory education, duration (years)_lag1","delta_Compulsory education, duration (years)",17,96,0.9759149702457629,1.888692456788232

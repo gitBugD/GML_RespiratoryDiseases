@@ -1,0 +1,7 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_GDP (current US$)_lag7,delta_GDP (current US$),1,320,1.2461127386351827,2.139161928172223
+2,delta_blh_lag9,delta_blh,2,310,0.7882433776635135,1.35628477305199
+3,delta_Gini index_lag5,delta_Gini index,3,300,0.4590953951559089,1.0955635728636768
+4,delta_Natural gas production_x_lag5,delta_Natural gas production_x,4,290,0.3107131051688543,0.6306024692987391
+5,delta_GDP per capita (constant 2015 US$)_lag2,delta_GDP per capita (constant 2015 US$),5,280,0.2694504776320035,0.5586829986916078
+6,"delta_Life expectancy at birth, total (years)_lag3","delta_Life expectancy at birth, total (years)",6,270,0.2533995221597454,0.5760130814752138

@@ -1,0 +1,10 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,"delta_Mortality rate, infant (per 1,000 live births)_lag5","delta_Mortality rate, infant (per 1,000 live births)",1,224,2.2066232194926334,6.708255535126511
+2,delta_v10_lag2,delta_v10,2,217,2.046235907010048,5.858488803864304
+3,delta_GDP (current US$)_lag3,delta_GDP (current US$),3,210,1.8020495481706091,5.567309981346909
+4,delta_skt_lag6,delta_skt,4,203,1.5909634593898352,5.386182433129136
+5,delta_Natural gas production_x_lag5,delta_Natural gas production_x,5,196,1.5098264957799268,5.019464260102097
+6,delta_Sulfur emission_lag7,delta_Sulfur emission,6,189,1.4591258221522059,5.400785928726975
+7,delta_d2m_lag3,delta_d2m,7,182,1.4309836945305092,5.206736093521897
+8,delta_Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)_lag1,delta_Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita),8,175,1.4165112256565449,5.294714814186875
+9,delta_Access to electricity (% of population)_lag1,delta_Access to electricity (% of population),9,168,1.3933564455688099,5.377159839630906

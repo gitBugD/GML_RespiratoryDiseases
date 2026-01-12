@@ -1,0 +1,9 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_CO2 emissions_lag15,delta_CO2 emissions,1,832,1.7410230565996971,3.3297242577592385
+2,delta_Raw materials extracted_lag25,delta_Raw materials extracted,2,806,0.5688190630489447,1.1395199557351208
+3,delta_Coal consumption_lag1,delta_Coal consumption,3,780,0.4975469380112553,0.9566739668913948
+4,delta_t2m_lag18,delta_t2m,4,754,0.42888389896982737,0.7801837896590649
+5,"delta_Mortality rate, infant (per 1,000 live births)_lag24","delta_Mortality rate, infant (per 1,000 live births)",5,728,0.39401059953454826,0.6533991567971182
+6,delta_u10_lag20,delta_u10,6,702,0.32719369286573324,0.6064349840335015
+7,"delta_Unemployment, total (% of total labor force) (national estimate)_lag17","delta_Unemployment, total (% of total labor force) (national estimate)",7,676,0.31815668553774334,0.6093589954637451
+8,"delta_Compulsory education, duration (years)_lag1","delta_Compulsory education, duration (years)",8,650,0.3181566855377432,0.6093589954637451

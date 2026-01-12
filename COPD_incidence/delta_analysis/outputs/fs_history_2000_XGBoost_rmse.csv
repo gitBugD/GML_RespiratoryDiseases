@@ -1,0 +1,6 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,"delta_Mortality rate, infant (per 1,000 live births)_lag4","delta_Mortality rate, infant (per 1,000 live births)",1,320,1.7161104030451626,2.7274968708658776
+2,"delta_Unemployment, total (% of total labor force) (national estimate)_lag4","delta_Unemployment, total (% of total labor force) (national estimate)",2,310,1.5811311773129364,2.911551960816439
+3,delta_u10_lag10,delta_u10,3,300,1.4643768435851845,2.7080056751871666
+4,delta_blh_lag2,delta_blh,4,290,1.4473256450664769,2.9277231777811608
+5,"delta_Population, total_lag4","delta_Population, total",5,280,1.4402872420302806,2.889618643631991

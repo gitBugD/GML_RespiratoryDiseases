@@ -1,0 +1,4 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_Gini index_lag6,delta_Gini index,1,384,3.5711324199849797,5.20345625822074
+2,"delta_Mortality rate, infant (per 1,000 live births)_lag8","delta_Mortality rate, infant (per 1,000 live births)",2,372,2.197460026666728,4.461933946056433
+3,delta_Access to electricity (% of population)_lag3,delta_Access to electricity (% of population),3,360,2.320626386751822,4.458087777538367

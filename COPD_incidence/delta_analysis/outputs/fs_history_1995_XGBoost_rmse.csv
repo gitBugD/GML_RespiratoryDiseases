@@ -1,0 +1,7 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_t2m_lag1,delta_t2m,1,160,1.5396944848477996,3.3317945299918392
+2,delta_sst_lag3,delta_sst,2,155,1.2005629037493395,3.7285581994433983
+3,delta_Energy use_lag3,delta_Energy use,3,150,1.0776956526419044,2.9176873135943993
+4,delta_CO2 emissions_lag4,delta_CO2 emissions,4,145,1.0259957707406884,2.9886999001936942
+5,delta_Surface area (sq. km)_lag1,delta_Surface area (sq. km),5,140,1.0249461869392453,3.0116164555983573
+6,delta_Access to clean fuels and technologies for cooking (% of population)_lag1,delta_Access to clean fuels and technologies for cooking (% of population),6,135,1.0249388769192243,3.0116164555983573

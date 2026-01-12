@@ -1,0 +1,7 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_Gini index_lag6,delta_Gini index,1,448,2.3144897526580466,3.534590603508704
+2,delta_blh_lag5,delta_blh,2,434,2.0961473077476103,2.675370591308763
+3,"delta_Unemployment, total (% of total labor force) (national estimate)_lag10","delta_Unemployment, total (% of total labor force) (national estimate)",3,420,1.8414612465069926,2.5181470040273553
+4,delta_d2m_lag10,delta_d2m,4,406,1.767570624477528,2.492918026823986
+5,delta_GDP per capita (constant 2015 US$)_lag6,delta_GDP per capita (constant 2015 US$),5,392,1.8272326110232688,2.379925133385413
+6,delta_sst_lag3,delta_sst,6,378,1.8248648051982845,2.379318254615953

@@ -1,0 +1,7 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,"delta_Mortality rate, infant (per 1,000 live births)_lag4","delta_Mortality rate, infant (per 1,000 live births)",1,192,2.0316547602569672,5.89179052532603
+2,delta_Renewable electricity output (% of total electricity output)_lag1,delta_Renewable electricity output (% of total electricity output),2,186,1.8969169319021162,5.157554761776225
+3,delta_Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)_lag5,delta_Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita),3,180,1.551049268060639,4.710757867702739
+4,"delta_Life expectancy at birth, total (years)_lag2","delta_Life expectancy at birth, total (years)",4,174,1.4268086172512249,3.918042020210521
+5,delta_Access to electricity (% of population)_lag3,delta_Access to electricity (% of population),5,168,1.4207510917818529,3.88984538734843
+6,delta_Access to clean fuels and technologies for cooking (% of population)_lag1,delta_Access to clean fuels and technologies for cooking (% of population),6,162,1.420082957323886,3.88984538734843

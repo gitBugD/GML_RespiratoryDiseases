@@ -1,0 +1,14 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_sst_lag2,delta_sst,1,160,1.4386905660201144,3.1305804109247006
+2,delta_Renewable electricity output (% of total electricity output)_lag1,delta_Renewable electricity output (% of total electricity output),2,155,1.2950863207197822,3.269840461607388
+3,delta_u10_lag2,delta_u10,3,150,1.2142803255441295,3.2367073674347684
+4,"delta_Life expectancy at birth, total (years)_lag5","delta_Life expectancy at birth, total (years)",4,145,1.1382869059938683,3.1220541309881007
+5,delta_GDP per capita (constant 2015 US$)_lag1,delta_GDP per capita (constant 2015 US$),5,140,1.0998602996544777,2.7469152019209124
+6,delta_Coal consumption_lag1,delta_Coal consumption,6,135,0.9694595857130358,2.456418500152804
+7,"delta_Unemployment, total (% of total labor force) (national estimate)_lag5","delta_Unemployment, total (% of total labor force) (national estimate)",7,130,0.9036674518337999,2.3305959547581327
+8,delta_Natural gas production_x_lag4,delta_Natural gas production_x,8,125,0.8663756726868315,2.390690131294191
+9,delta_v10_lag1,delta_v10,9,120,0.8247395389851635,2.465790722307559
+10,delta_PM2.5 pollution_lag5,delta_PM2.5 pollution,10,115,0.8063779414725358,2.438981994709378
+11,delta_Raw materials extracted_lag5,delta_Raw materials extracted,11,110,0.7849358968073444,2.4226281860243457
+12,delta_Surface area (sq. km)_lag3,delta_Surface area (sq. km),12,105,0.7662615396346584,2.4572576059124813
+13,delta_Gini index_lag5,delta_Gini index,13,100,0.7473036486760963,2.36969262427224

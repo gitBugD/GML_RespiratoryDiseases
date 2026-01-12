@@ -1,0 +1,5 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,"delta_Mortality rate, infant (per 1,000 live births)_lag2","delta_Mortality rate, infant (per 1,000 live births)",1,576,1.9169405766670649,3.7457630903992367
+2,delta_Gini index_lag12,delta_Gini index,2,558,1.9327852414666626,2.874061819060131
+3,delta_Surface area (sq. km)_lag9,delta_Surface area (sq. km),3,540,1.9447234920958059,2.834599967940136
+4,delta_Coal consumption_lag1,delta_Coal consumption,4,522,1.898820583711299,2.7741425903114987

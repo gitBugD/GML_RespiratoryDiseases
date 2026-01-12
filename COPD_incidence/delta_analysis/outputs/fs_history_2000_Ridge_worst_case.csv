@@ -1,0 +1,10 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_GDP (current US$)_lag7,delta_GDP (current US$),1,320,1.2461127386351827,2.139161928172223
+2,delta_Coal consumption_lag3,delta_Coal consumption,2,310,0.8163765602070941,1.3079104844501024
+3,delta_Raw materials extracted_lag4,delta_Raw materials extracted,3,300,0.6489350023097292,1.022992452383726
+4,"delta_Population, total_lag8","delta_Population, total",4,290,0.580356512681725,0.9275087142573291
+5,delta_v10_lag2,delta_v10,5,280,0.3945090891241911,0.7058229961813236
+6,delta_Gini index_lag7,delta_Gini index,6,270,0.3810810170121141,0.6665079300011194
+7,delta_t2m_lag3,delta_t2m,7,260,0.3978382992876806,0.6302408457606248
+8,delta_Access to electricity (% of population)_lag3,delta_Access to electricity (% of population),8,250,0.40989251888989847,0.6211963225463322
+9,delta_skt_lag3,delta_skt,9,240,0.424284049418702,0.6202296737898618

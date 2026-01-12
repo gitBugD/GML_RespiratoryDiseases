@@ -1,0 +1,5 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_t2m_lag8,delta_t2m,1,416,2.9884187180290196,4.281507459522288
+2,delta_Gini index_lag2,delta_Gini index,2,403,3.0171818752820787,4.155020029911526
+3,delta_sst_lag7,delta_sst,3,390,2.9650381261799326,4.098136389497483
+4,delta_PM2.5 pollution_lag13,delta_PM2.5 pollution,4,377,3.317378911578775,4.0911687853371745

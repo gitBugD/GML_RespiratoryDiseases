@@ -1,0 +1,8 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_skt_lag5,delta_skt,1,256,2.6205849614132632,5.483762620165749
+2,delta_PM2.5 pollution_lag7,delta_PM2.5 pollution,2,248,1.7284703881593453,4.305220529212988
+3,delta_Sulfur emission_lag5,delta_Sulfur emission,3,240,1.6784839753128815,4.070982202663458
+4,delta_d2m_lag5,delta_d2m,4,232,1.7508765539385054,3.727792561204609
+5,delta_Natural gas production_x_lag6,delta_Natural gas production_x,5,224,1.7282201102941313,3.7275508047654
+6,delta_Access to electricity (% of population)_lag6,delta_Access to electricity (% of population),6,216,1.7442272333174702,3.7084520460678903
+7,delta_Gini index_lag8,delta_Gini index,7,208,1.7376285246589693,3.620564028396643

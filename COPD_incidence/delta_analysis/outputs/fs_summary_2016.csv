@@ -1,0 +1,5 @@
+target_year,selection,model,optimize_metric,n_features,final_rmse,final_worst_case,selected_features
+2016,Ridge_rmse,Ridge,rmse,5,0.4496849951452802,0.9493537132628496,"delta_Surface area (sq. km)_lag14 | delta_Mortality rate, infant (per 1,000 live births)_lag2 | delta_Natural gas production_x_lag18 | delta_Unemployment, total (% of total labor force) (national estimate)_lag12 | delta_Access to electricity (% of population)_lag8"
+2016,Ridge_worst_case,Ridge,worst_case,4,0.7471333380389841,1.0459026397776836,"delta_Surface area (sq. km)_lag14 | delta_CO2 emissions_lag10 | delta_Unemployment, total (% of total labor force) (national estimate)_lag22 | delta_v10_lag15"
+2016,XGBoost_rmse,XGBoost,rmse,5,1.9226570086560355,4.858981052540855,delta_Renewable electricity output (% of total electricity output)_lag9 | delta_Raw materials extracted_lag24 | delta_skt_lag17 | delta_Access to electricity (% of population)_lag11 | delta_Energy use_lag2
+2016,XGBoost_worst_case,XGBoost,worst_case,3,2.597760827745723,4.810171524190025,delta_Natural gas production_y_lag11 | delta_Gini index_lag11 | delta_Raw materials extracted_lag15

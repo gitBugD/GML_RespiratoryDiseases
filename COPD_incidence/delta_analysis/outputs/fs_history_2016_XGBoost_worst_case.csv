@@ -1,0 +1,4 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_Natural gas production_y_lag11,delta_Natural gas production_y,1,800,2.8364308064149335,4.858398357533531
+2,delta_Gini index_lag11,delta_Gini index,2,775,2.688394012146606,4.826074758671837
+3,delta_Raw materials extracted_lag15,delta_Raw materials extracted,3,750,2.597760827745723,4.810171524190025

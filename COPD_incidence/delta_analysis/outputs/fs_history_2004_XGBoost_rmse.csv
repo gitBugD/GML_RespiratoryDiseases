@@ -1,0 +1,8 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_Raw materials extracted_lag4,delta_Raw materials extracted,1,448,2.2625789184209393,3.90269762636251
+2,delta_Coal consumption_lag7,delta_Coal consumption,2,434,1.9140194744771146,3.4514206882805354
+3,delta_CO2 emissions_lag6,delta_CO2 emissions,3,420,1.703220761150556,2.513059260048621
+4,delta_GDP per capita (constant 2015 US$)_lag13,delta_GDP per capita (constant 2015 US$),4,406,1.6135613258399357,2.511298777260535
+5,delta_t2m_lag1,delta_t2m,5,392,1.5942929518395155,2.5111709849021366
+6,delta_u10_lag5,delta_u10,6,378,1.5894270399654324,2.5111709849021366
+7,delta_blh_lag3,delta_blh,7,364,1.5892854662589204,2.5111709849021366

@@ -1,0 +1,7 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_GDP (current US$)_lag10,delta_GDP (current US$),1,416,1.9842251773026993,3.744932793911588
+2,delta_blh_lag11,delta_blh,2,403,1.3127130036067374,2.40218577562349
+3,delta_Coal consumption_lag7,delta_Coal consumption,3,390,0.7661798173080437,1.8427961244749334
+4,delta_Energy use_lag2,delta_Energy use,4,377,0.7493965158707367,1.6266097836827136
+5,delta_Access to electricity (% of population)_lag1,delta_Access to electricity (% of population),5,364,0.6709628429123741,1.6248237751091668
+6,delta_Sulfur emission_lag1,delta_Sulfur emission,6,351,0.6709628429123738,1.6248237751091668

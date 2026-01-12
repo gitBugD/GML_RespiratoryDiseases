@@ -1,0 +1,7 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_Gini index_lag11,delta_Gini index,1,608,1.8070674245795066,2.5366770887317807
+2,delta_d2m_lag11,delta_d2m,2,589,1.2111904905286004,1.9650480288466772
+3,delta_CO2 emissions_lag10,delta_CO2 emissions,3,570,0.778207421026433,1.7685947004509734
+4,"delta_Life expectancy at birth, total (years)_lag9","delta_Life expectancy at birth, total (years)",4,551,0.4484770176210228,0.6611507366407512
+5,delta_blh_lag18,delta_blh,5,532,0.26380407764998326,0.46062291262230204
+6,delta_Renewable electricity output (% of total electricity output)_lag1,delta_Renewable electricity output (% of total electricity output),6,513,0.2596567482075456,0.42745113363173504

@@ -1,0 +1,5 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,"delta_Unemployment, total (% of total labor force) (national estimate)_lag16","delta_Unemployment, total (% of total labor force) (national estimate)",1,544,2.3331461467399657,6.065394492050973
+2,delta_CO2 emissions_lag13,delta_CO2 emissions,2,527,1.1920561920850845,2.7406138437988
+3,delta_PM2.5 pollution_lag8,delta_PM2.5 pollution,3,510,0.6982574768513291,1.5371014390180724
+4,delta_blh_lag1,delta_blh,4,493,0.650316916194705,1.3488143063553144

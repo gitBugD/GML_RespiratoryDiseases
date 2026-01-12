@@ -1,0 +1,9 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,"delta_Life expectancy at birth, total (years)_lag23","delta_Life expectancy at birth, total (years)",1,736,1.7229463529166626,2.764247831077381
+2,delta_GDP per capita (constant 2015 US$)_lag3,delta_GDP per capita (constant 2015 US$),2,713,1.0587010978626112,1.446323547062451
+3,delta_CO2 emissions_lag14,delta_CO2 emissions,3,690,0.6302796116682976,1.007154125173897
+4,delta_blh_lag15,delta_blh,4,667,0.4360350906532964,0.6069649584571621
+5,delta_Energy use_lag22,delta_Energy use,5,644,0.33542778552742336,0.45948656057976933
+6,delta_Raw materials extracted_lag11,delta_Raw materials extracted,6,621,0.24689345709061924,0.4073533691815392
+7,delta_Renewable electricity output (% of total electricity output)_lag10,delta_Renewable electricity output (% of total electricity output),7,598,0.25033022718059733,0.3732839094936775
+8,"delta_Compulsory education, duration (years)_lag1","delta_Compulsory education, duration (years)",8,575,0.25033022718059683,0.37328390949367485

@@ -1,0 +1,8 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_Gini index_lag6,delta_Gini index,1,448,1.936986593933401,3.035881911076908
+2,delta_Coal consumption_lag5,delta_Coal consumption,2,434,1.3481463938667504,1.9030179474652904
+3,delta_d2m_lag1,delta_d2m,3,420,0.8465780531664958,1.3977700766234875
+4,delta_Surface area (sq. km)_lag10,delta_Surface area (sq. km),4,406,0.8084391443055615,1.1593969949926963
+5,delta_sst_lag6,delta_sst,5,392,0.5486491028881295,0.8288509245199487
+6,delta_Renewable electricity output (% of total electricity output)_lag13,delta_Renewable electricity output (% of total electricity output),6,378,0.5815394405166807,0.7740636538704817
+7,delta_Sulfur emission_lag6,delta_Sulfur emission,7,364,0.5600008253181794,0.7677398853282087

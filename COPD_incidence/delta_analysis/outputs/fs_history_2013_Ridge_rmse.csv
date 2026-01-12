@@ -1,0 +1,5 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_Energy use_lag21,delta_Energy use,1,704,1.369387648836748,2.9527902240050965
+2,delta_Natural gas production_x_lag12,delta_Natural gas production_x,2,682,0.7966324577521465,1.2211029792314827
+3,delta_Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)_lag21,delta_Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita),3,660,0.47794515073934035,0.844425314365238
+4,delta_Raw materials extracted_lag9,delta_Raw materials extracted,4,638,0.3262012208352394,0.5395613725268009

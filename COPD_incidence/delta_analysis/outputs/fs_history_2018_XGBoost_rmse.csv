@@ -1,0 +1,7 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,"delta_Mortality rate, infant (per 1,000 live births)_lag21","delta_Mortality rate, infant (per 1,000 live births)",1,864,1.3303549723463148,2.823070776439806
+2,delta_GDP (current US$)_lag25,delta_GDP (current US$),2,837,1.0846386896364275,2.8097138523827994
+3,delta_Renewable electricity output (% of total electricity output)_lag3,delta_Renewable electricity output (% of total electricity output),3,810,1.0440203036796338,2.8097138523827994
+4,delta_Electricity use_lag21,delta_Electricity use,4,783,1.0241938576471235,2.810229074932238
+5,delta_Raw materials extracted_lag21,delta_Raw materials extracted,5,756,1.021286885422251,2.810229074932238
+6,delta_d2m_lag20,delta_d2m,6,729,1.020345448519074,2.810229074932238

@@ -1,0 +1,11 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_u10_lag2,delta_u10,1,64,1.776121058483591,3.874013749918663
+2,delta_CO2 emissions_lag1,delta_CO2 emissions,2,62,1.6528553167637776,3.602430883787859
+3,"delta_Mortality rate, infant (per 1,000 live births)_lag2","delta_Mortality rate, infant (per 1,000 live births)",3,60,1.5755714833087193,4.055909925073141
+4,delta_Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)_lag1,delta_Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita),4,58,1.3519730561415324,2.9717476518434083
+5,delta_Sulfur emission_lag2,delta_Sulfur emission,5,56,1.160652703720247,2.994185025864768
+6,delta_d2m_lag1,delta_d2m,6,54,1.1102854688892727,2.8707016402627183
+7,delta_Renewable electricity output (% of total electricity output)_lag2,delta_Renewable electricity output (% of total electricity output),7,52,1.100758605728758,2.808821154605131
+8,delta_Access to electricity (% of population)_lag1,delta_Access to electricity (% of population),8,50,1.0753566157838408,2.792253751046882
+9,"delta_Unemployment, total (% of total labor force) (national estimate)_lag2","delta_Unemployment, total (% of total labor force) (national estimate)",9,48,1.0663949655044662,2.7133990225967723
+10,delta_Coal consumption_lag2,delta_Coal consumption,10,46,1.0509995950165318,2.656417578485968

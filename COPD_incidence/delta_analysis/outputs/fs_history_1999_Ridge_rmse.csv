@@ -1,0 +1,24 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_u10_lag3,delta_u10,1,288,1.70202002359182,4.817522533353058
+2,delta_GDP (current US$)_lag8,delta_GDP (current US$),2,279,1.5222559353558736,4.722639006577329
+3,delta_skt_lag3,delta_skt,3,270,1.3394742590729363,5.032925738035142
+4,"delta_Life expectancy at birth, total (years)_lag5","delta_Life expectancy at birth, total (years)",4,261,1.1435481884586551,4.5669683737550315
+5,delta_GDP per capita (constant 2015 US$)_lag7,delta_GDP per capita (constant 2015 US$),5,252,1.0584386051065802,4.115520976883188
+6,"delta_Mortality rate, infant (per 1,000 live births)_lag7","delta_Mortality rate, infant (per 1,000 live births)",6,243,1.0122232422385182,4.006300361659137
+7,delta_Access to electricity (% of population)_lag9,delta_Access to electricity (% of population),7,234,0.9654780121848419,4.006300361659137
+8,delta_blh_lag6,delta_blh,8,225,0.9158761523518463,3.6087760291879265
+9,delta_Gini index_lag1,delta_Gini index,9,216,0.8656959918969405,3.5151120043550463
+10,"delta_Unemployment, total (% of total labor force) (national estimate)_lag6","delta_Unemployment, total (% of total labor force) (national estimate)",10,207,0.8117014906316792,3.2677739712014553
+11,delta_Coal consumption_lag3,delta_Coal consumption,11,198,0.7859601223979404,3.3249713360329336
+12,delta_t2m_lag7,delta_t2m,12,189,0.7482586931297288,3.0372020241389794
+13,delta_Raw materials extracted_lag9,delta_Raw materials extracted,13,180,0.7342505461054479,3.0087128770195317
+14,delta_Natural gas production_y_lag7,delta_Natural gas production_y,14,171,0.6982496096180173,2.911781411623199
+15,delta_Natural gas production_x_lag7,delta_Natural gas production_x,15,162,0.682512334364057,2.6814828048340784
+16,delta_Sulfur emission_lag3,delta_Sulfur emission,16,153,0.6580992789203159,2.680073547775171
+17,delta_Energy use_lag1,delta_Energy use,17,144,0.6318537370327925,2.348224286246511
+18,delta_CO2 emissions_lag9,delta_CO2 emissions,18,135,0.6216347711344397,2.390920132358925
+19,delta_Renewable electricity output (% of total electricity output)_lag3,delta_Renewable electricity output (% of total electricity output),19,126,0.5908114595848327,2.2900947203907194
+20,delta_Surface area (sq. km)_lag7,delta_Surface area (sq. km),20,117,0.560001597068463,2.186447399828473
+21,delta_Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)_lag2,delta_Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita),21,108,0.5288920220452469,1.8853838725892826
+22,delta_d2m_lag6,delta_d2m,22,99,0.5129278653920271,1.7104935841367706
+23,delta_Electricity use_lag6,delta_Electricity use,23,90,0.4699958515537245,1.5398601463297705

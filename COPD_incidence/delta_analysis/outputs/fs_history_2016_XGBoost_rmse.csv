@@ -1,0 +1,6 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_Renewable electricity output (% of total electricity output)_lag9,delta_Renewable electricity output (% of total electricity output),1,800,2.3201353239605096,4.858950058125572
+2,delta_Raw materials extracted_lag24,delta_Raw materials extracted,2,775,1.966145975052966,4.858981052540855
+3,delta_skt_lag17,delta_skt,3,750,1.9329228515694452,4.858981052540855
+4,delta_Access to electricity (% of population)_lag11,delta_Access to electricity (% of population),4,725,1.922814631305266,4.858981052540855
+5,delta_Energy use_lag2,delta_Energy use,5,700,1.9226570086560355,4.858981052540855

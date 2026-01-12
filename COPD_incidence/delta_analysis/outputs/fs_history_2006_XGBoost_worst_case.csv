@@ -1,0 +1,10 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_CO2 emissions_lag1,delta_CO2 emissions,1,512,2.107147226796224,4.161121452022712
+2,delta_Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)_lag1,delta_Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita),2,496,1.9480662385730974,3.999651307035606
+3,delta_GDP (current US$)_lag12,delta_GDP (current US$),3,480,2.008935621067957,3.530950972605865
+4,delta_sst_lag10,delta_sst,4,464,1.913887303298153,3.4840182753097224
+5,delta_Oil consumption_lag11,delta_Oil consumption,5,448,1.9090255382240855,3.48227081613652
+6,delta_Raw materials extracted_lag2,delta_Raw materials extracted,6,432,2.0018459229298826,3.4790469052087474
+7,"delta_Unemployment, total (% of total labor force) (national estimate)_lag4","delta_Unemployment, total (% of total labor force) (national estimate)",7,416,2.005552343693562,3.4786911548864055
+8,delta_Electricity use_lag6,delta_Electricity use,8,400,2.057609885868377,3.4777818562280345
+9,delta_blh_lag13,delta_blh,9,384,2.217192634673675,3.47356600480191

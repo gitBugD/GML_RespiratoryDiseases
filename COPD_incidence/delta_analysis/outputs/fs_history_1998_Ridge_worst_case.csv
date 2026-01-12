@@ -1,0 +1,11 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_sst_lag5,delta_sst,1,256,2.1503990208446737,5.336553826154397
+2,delta_u10_lag6,delta_u10,2,248,1.8025265256426888,4.103203650226785
+3,"delta_Life expectancy at birth, total (years)_lag5","delta_Life expectancy at birth, total (years)",3,240,1.6537035081197025,3.1798478276910815
+4,"delta_Mortality rate, infant (per 1,000 live births)_lag8","delta_Mortality rate, infant (per 1,000 live births)",4,232,1.5189135413180805,2.7774678590880892
+5,delta_t2m_lag7,delta_t2m,5,224,1.4255974181036433,2.478473840076823
+6,delta_Surface area (sq. km)_lag4,delta_Surface area (sq. km),6,216,1.3936878941375574,2.1065825154535096
+7,delta_d2m_lag4,delta_d2m,7,208,1.3162770139142979,2.0437243336362414
+8,delta_Raw materials extracted_lag5,delta_Raw materials extracted,8,200,1.373933982936423,1.9580574637079273
+9,delta_GDP (current US$)_lag2,delta_GDP (current US$),9,192,1.3444943769797197,1.9526898591714237
+10,delta_Energy use_lag5,delta_Energy use,10,184,1.3496518873685577,1.9223528242036299

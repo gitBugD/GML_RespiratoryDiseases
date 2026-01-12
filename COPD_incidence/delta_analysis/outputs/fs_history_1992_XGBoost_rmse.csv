@@ -1,0 +1,8 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)_lag1,delta_Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita),1,64,1.9216388336872634,4.008917375358294
+2,delta_Coal consumption_lag2,delta_Coal consumption,2,62,1.539031565462386,3.7183247704242746
+3,delta_u10_lag2,delta_u10,3,60,1.4519689328020025,3.1646564204166907
+4,"delta_Population, total_lag1","delta_Population, total",4,58,1.3018251129973137,2.5032655362048786
+5,delta_Electricity use_lag2,delta_Electricity use,5,56,1.2695029470842076,2.8338012892673987
+6,delta_PM2.5 pollution_lag2,delta_PM2.5 pollution,6,54,1.2454298109550574,2.9632170397709388
+7,delta_Surface area (sq. km)_lag1,delta_Surface area (sq. km),7,52,1.244176403565012,2.9632170397709388

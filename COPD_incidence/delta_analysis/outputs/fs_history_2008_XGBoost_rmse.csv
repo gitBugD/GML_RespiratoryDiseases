@@ -1,0 +1,4 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,"delta_Mortality rate, infant (per 1,000 live births)_lag2","delta_Mortality rate, infant (per 1,000 live births)",1,576,1.9169405766670649,3.7457630903992367
+2,delta_Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)_lag3,delta_Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita),2,558,1.5646251299975562,2.931322332365795
+3,delta_Access to clean fuels and technologies for cooking (% of population)_lag2,delta_Access to clean fuels and technologies for cooking (% of population),3,540,1.4783519804542025,2.931322332365795

@@ -1,0 +1,5 @@
+target_year,selection,model,optimize_metric,n_features,final_rmse,final_worst_case,selected_features
+2013,Ridge_rmse,Ridge,rmse,4,0.3262012208352394,0.5395613725268009,delta_Energy use_lag21 | delta_Natural gas production_x_lag12 | delta_Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)_lag21 | delta_Raw materials extracted_lag9
+2013,Ridge_worst_case,Ridge,worst_case,4,0.7017727869023659,1.029196203281912,"delta_Oil consumption_lag20 | delta_Unemployment, total (% of total labor force) (national estimate)_lag9 | delta_Raw materials extracted_lag22 | delta_Sulfur emission_lag1"
+2013,XGBoost_rmse,XGBoost,rmse,4,1.7764613646969927,2.8474332981716657,"delta_Energy use_lag3 | delta_Population, total_lag2 | delta_u10_lag14 | delta_PM2.5 pollution_lag2"
+2013,XGBoost_worst_case,XGBoost,worst_case,2,1.700333766615632,2.5349955987938984,delta_PM2.5 pollution_lag10 | delta_sst_lag22

@@ -1,0 +1,7 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_Energy use_lag20,delta_Energy use,1,672,1.5350322690503286,3.15928969030642
+2,delta_CO2 emissions_lag12,delta_CO2 emissions,2,651,0.7333554319175892,1.8055508379324205
+3,delta_u10_lag13,delta_u10,3,630,0.5217627754210602,0.944733664122051
+4,delta_d2m_lag2,delta_d2m,4,609,0.3284425595533408,0.5771122392647596
+5,delta_Surface area (sq. km)_lag16,delta_Surface area (sq. km),5,588,0.3144505591425421,0.3939154569828638
+6,delta_sst_lag10,delta_sst,6,567,0.28636830137797503,0.419654221921653

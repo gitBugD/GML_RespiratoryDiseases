@@ -1,0 +1,11 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_Gini index_lag7,delta_Gini index,1,480,1.467342700875212,2.5672412792670527
+2,delta_CO2 emissions_lag15,delta_CO2 emissions,2,465,1.159754959546699,1.5810052969042134
+3,delta_Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)_lag11,delta_Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita),3,450,1.1069187876804487,1.4492910788683324
+4,delta_Access to electricity (% of population)_lag2,delta_Access to electricity (% of population),4,435,0.8526091238751253,1.2354229083866972
+5,delta_Oil consumption_lag7,delta_Oil consumption,5,420,0.6585454436995516,1.0242992407841829
+6,"delta_Unemployment, total (% of total labor force) (national estimate)_lag5","delta_Unemployment, total (% of total labor force) (national estimate)",6,405,0.5519500408986454,0.8122388446077107
+7,delta_skt_lag6,delta_skt,7,390,0.5089466017537808,0.7513740294719442
+8,delta_sst_lag15,delta_sst,8,375,0.5503127706177776,0.7476608915703093
+9,delta_Natural gas production_y_lag5,delta_Natural gas production_y,9,360,0.4769185610676171,0.7465706100827267
+10,delta_blh_lag2,delta_blh,10,345,0.5101500293847687,0.7451692050776906

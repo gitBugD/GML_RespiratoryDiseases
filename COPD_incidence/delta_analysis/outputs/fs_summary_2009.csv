@@ -1,0 +1,5 @@
+target_year,selection,model,optimize_metric,n_features,final_rmse,final_worst_case,selected_features
+2009,Ridge_rmse,Ridge,rmse,6,0.2596567482075456,0.42745113363173504,"delta_Gini index_lag11 | delta_d2m_lag11 | delta_CO2 emissions_lag10 | delta_Life expectancy at birth, total (years)_lag9 | delta_blh_lag18 | delta_Renewable electricity output (% of total electricity output)_lag1"
+2009,Ridge_worst_case,Ridge,worst_case,7,0.37417611232433384,0.5386065839330403,delta_Gini index_lag11 | delta_CO2 emissions_lag10 | delta_skt_lag5 | delta_Access to electricity (% of population)_lag6 | delta_Natural gas production_y_lag2 | delta_Raw materials extracted_lag7 | delta_Oil consumption_lag15
+2009,XGBoost_rmse,XGBoost,rmse,4,1.7094284773028137,4.08951528278871,"delta_Mortality rate, infant (per 1,000 live births)_lag3 | delta_Raw materials extracted_lag15 | delta_Gini index_lag19 | delta_GDP (current US$)_lag1"
+2009,XGBoost_worst_case,XGBoost,worst_case,2,2.2686486810799686,3.240463645280414,delta_Gini index_lag11 | delta_Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)_lag16

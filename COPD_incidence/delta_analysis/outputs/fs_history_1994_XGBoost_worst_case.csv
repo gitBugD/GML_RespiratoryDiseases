@@ -1,0 +1,6 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_Energy use_lag4,delta_Energy use,1,128,1.8405135438157567,3.343347184483406
+2,delta_GDP (current US$)_lag3,delta_GDP (current US$),2,124,1.649000176239103,2.8834366017990476
+3,delta_Electricity use_lag1,delta_Electricity use,3,120,1.454079499057874,2.5821585878975952
+4,delta_Raw materials extracted_lag2,delta_Raw materials extracted,4,116,1.4209395461442471,2.443098540601113
+5,delta_u10_lag2,delta_u10,5,112,1.422979296202719,2.1981810743027097

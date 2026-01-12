@@ -1,0 +1,6 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_u10_lag2,delta_u10,1,64,1.776121058483591,3.874013749918663
+2,delta_Electricity use_lag1,delta_Electricity use,2,62,1.7017480961690508,3.4684678537078293
+3,delta_blh_lag1,delta_blh,3,60,1.6591123960361234,3.204919858149279
+4,delta_Natural gas production_x_lag1,delta_Natural gas production_x,4,58,1.649397623968471,3.005451863136547
+5,delta_Renewable electricity output (% of total electricity output)_lag1,delta_Renewable electricity output (% of total electricity output),5,56,1.6899843573188602,2.9467521647610595

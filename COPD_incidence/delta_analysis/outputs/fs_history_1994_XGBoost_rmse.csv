@@ -1,0 +1,9 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,"delta_Unemployment, total (% of total labor force) (national estimate)_lag2","delta_Unemployment, total (% of total labor force) (national estimate)",1,128,1.7782612241840823,4.272285662029347
+2,"delta_Life expectancy at birth, total (years)_lag4","delta_Life expectancy at birth, total (years)",2,124,1.5887631343484134,3.3833814235752016
+3,delta_sst_lag3,delta_sst,3,120,1.4900861030423862,3.0958839977215575
+4,delta_u10_lag2,delta_u10,4,116,1.3039501288234234,2.5724907507256205
+5,delta_PM2.5 pollution_lag2,delta_PM2.5 pollution,5,112,1.2740846195962243,2.5552071789951754
+6,delta_v10_lag4,delta_v10,6,108,1.170249999766029,2.7914559106083345
+7,delta_GDP (current US$)_lag2,delta_GDP (current US$),7,104,1.1109790509516984,2.618159641572049
+8,"delta_Mortality rate, infant (per 1,000 live births)_lag3","delta_Mortality rate, infant (per 1,000 live births)",8,100,1.0909282602741617,2.484518160172513

@@ -1,0 +1,14 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_Gini index_lag7,delta_Gini index,1,480,1.7810072075974812,4.1194615549136415
+2,delta_Renewable electricity output (% of total electricity output)_lag1,delta_Renewable electricity output (% of total electricity output),2,465,1.5736824914059455,4.11928679409516
+3,delta_Oil consumption_lag3,delta_Oil consumption,3,450,1.4594011453674007,3.6459176725436464
+4,delta_t2m_lag2,delta_t2m,4,435,1.4171026043558244,3.4932495540667787
+5,delta_sp_lag3,delta_sp,5,420,1.367426324726898,3.484416145711066
+6,delta_Natural gas production_x_lag11,delta_Natural gas production_x,6,405,1.3402894946658286,3.484416145711066
+7,delta_sst_lag11,delta_sst,7,390,1.3265954655927776,3.493806976704718
+8,delta_Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)_lag8,delta_Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita),8,375,1.3234994119427987,3.493806976704718
+9,delta_skt_lag9,delta_skt,9,360,1.3228198941202778,3.493458051114203
+10,delta_v10_lag1,delta_v10,10,345,1.3225520499214451,3.493458051114203
+11,delta_u10_lag3,delta_u10,11,330,1.3223398083758735,3.493458051114203
+12,delta_Electricity use_lag3,delta_Electricity use,12,315,1.3221589842036983,3.493458051114203
+13,delta_Sulfur emission_lag13,delta_Sulfur emission,13,300,1.3220128064614185,3.493458051114203

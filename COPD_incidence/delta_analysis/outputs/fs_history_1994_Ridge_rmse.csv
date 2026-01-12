@@ -1,0 +1,19 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_sst_lag1,delta_sst,1,128,1.4702712216316807,3.3554047975021497
+2,delta_Renewable electricity output (% of total electricity output)_lag1,delta_Renewable electricity output (% of total electricity output),2,124,1.31419474535028,2.8973805956388397
+3,delta_u10_lag3,delta_u10,3,120,1.065484046237393,2.4145924501889393
+4,delta_Electricity use_lag1,delta_Electricity use,4,116,0.9968508963035743,1.8464607646593407
+5,delta_Energy use_lag4,delta_Energy use,5,112,0.9030550954323873,2.2489073370896406
+6,delta_Access to electricity (% of population)_lag1,delta_Access to electricity (% of population),6,108,0.8114511150522103,2.159016021020216
+7,delta_t2m_lag1,delta_t2m,7,104,0.7595343230217634,2.1709281191306395
+8,delta_sp_lag4,delta_sp,8,100,0.726942105597946,2.0936436149593245
+9,delta_GDP (current US$)_lag1,delta_GDP (current US$),9,96,0.7135110430015754,2.076092747422752
+10,"delta_Mortality rate, infant (per 1,000 live births)_lag4","delta_Mortality rate, infant (per 1,000 live births)",10,92,0.6884589981256103,2.1137122454522554
+11,delta_Sulfur emission_lag4,delta_Sulfur emission,11,88,0.673385705597205,2.030779783970333
+12,"delta_Unemployment, total (% of total labor force) (national estimate)_lag4","delta_Unemployment, total (% of total labor force) (national estimate)",12,84,0.6593285040541548,2.0127207337932163
+13,delta_blh_lag3,delta_blh,13,80,0.6481825357382931,1.9048581491307548
+14,delta_GDP per capita (constant 2015 US$)_lag1,delta_GDP per capita (constant 2015 US$),14,76,0.6445023068478001,1.9356117414288256
+15,"delta_Life expectancy at birth, total (years)_lag1","delta_Life expectancy at birth, total (years)",15,72,0.6049395989131271,1.99381689087323
+16,delta_PM2.5 pollution_lag4,delta_PM2.5 pollution,16,68,0.6047066660879066,1.949471999317744
+17,delta_skt_lag2,delta_skt,17,64,0.5960875079751704,1.894165213177689
+18,delta_Surface area (sq. km)_lag2,delta_Surface area (sq. km),18,60,0.5936451466268642,1.8699926574398793

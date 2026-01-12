@@ -1,0 +1,7 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_Energy use_lag3,delta_Energy use,1,96,1.9918735694966994,3.497709733541342
+2,delta_u10_lag3,delta_u10,2,93,1.6085534658226273,2.980037681011936
+3,delta_PM2.5 pollution_lag2,delta_PM2.5 pollution,3,90,1.4586054608321344,2.6548254541052643
+4,delta_Electricity use_lag2,delta_Electricity use,4,87,1.212558241439039,2.33732957226394
+5,delta_Coal consumption_lag3,delta_Coal consumption,5,84,1.1992924808569358,2.038758260305258
+6,delta_Sulfur emission_lag3,delta_Sulfur emission,6,81,1.1438599723255949,1.986316952167158

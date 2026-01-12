@@ -1,0 +1,7 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_GDP (current US$)_lag10,delta_GDP (current US$),1,448,1.9322064487218198,4.085709486068203
+2,delta_blh_lag12,delta_blh,2,434,1.1007441288258073,2.6937117302547167
+3,delta_Raw materials extracted_lag13,delta_Raw materials extracted,3,420,0.7659628775115785,1.3222603185688202
+4,"delta_Unemployment, total (% of total labor force) (national estimate)_lag10","delta_Unemployment, total (% of total labor force) (national estimate)",4,406,0.4387283108374134,0.6957472390299688
+5,delta_Energy use_lag1,delta_Energy use,5,392,0.3847075469206333,0.8899778183629523
+6,delta_Renewable electricity output (% of total electricity output)_lag2,delta_Renewable electricity output (% of total electricity output),6,378,0.37468090049550495,0.874708689778531

@@ -1,0 +1,19 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_u10_lag1,delta_u10,1,224,2.0693358829754924,5.425811360260715
+2,delta_Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)_lag1,delta_Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita),2,217,1.8636750440319303,4.392465859294953
+3,delta_GDP (current US$)_lag3,delta_GDP (current US$),3,210,1.7046445697605621,4.377682371734485
+4,"delta_Life expectancy at birth, total (years)_lag1","delta_Life expectancy at birth, total (years)",4,203,1.5383956630161861,3.669403151025298
+5,delta_Renewable electricity output (% of total electricity output)_lag3,delta_Renewable electricity output (% of total electricity output),5,196,1.310483445215168,3.032230929604517
+6,delta_GDP per capita (constant 2015 US$)_lag1,delta_GDP per capita (constant 2015 US$),6,189,1.2146798173254554,2.670995599959996
+7,delta_Natural gas production_x_lag1,delta_Natural gas production_x,7,182,1.1350518939043874,2.969856339740886
+8,delta_Raw materials extracted_lag1,delta_Raw materials extracted,8,175,1.0736854395167152,3.2859823246747
+9,delta_Energy use_lag5,delta_Energy use,9,168,0.8557694018089432,2.2620997947322907
+10,delta_Sulfur emission_lag5,delta_Sulfur emission,10,161,0.7534259131181161,2.24953598330801
+11,delta_Gini index_lag4,delta_Gini index,11,154,0.7151795789775962,2.1822221841910183
+12,"delta_Unemployment, total (% of total labor force) (national estimate)_lag3","delta_Unemployment, total (% of total labor force) (national estimate)",12,147,0.6760231019130684,2.073876785557557
+13,delta_PM2.5 pollution_lag5,delta_PM2.5 pollution,13,140,0.651812128881391,1.998062334152765
+14,delta_Surface area (sq. km)_lag6,delta_Surface area (sq. km),14,133,0.6292925872153631,1.9689618282109844
+15,delta_Oil consumption_lag7,delta_Oil consumption,15,126,0.6021029658453554,1.6393073459524983
+16,delta_CO2 emissions_lag5,delta_CO2 emissions,16,119,0.5817064411121513,1.5134302135133177
+17,delta_d2m_lag5,delta_d2m,17,112,0.5419744116435136,1.362441475395432
+18,delta_blh_lag4,delta_blh,18,105,0.532524568150026,1.2361668200816105

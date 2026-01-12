@@ -1,0 +1,9 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_CO2 emissions_lag2,delta_CO2 emissions,1,768,0.9260915338484359,2.032415815241234
+2,delta_Natural gas production_y_lag10,delta_Natural gas production_y,2,744,0.694229390410414,1.0774041507164795
+3,delta_GDP per capita (constant 2015 US$)_lag20,delta_GDP per capita (constant 2015 US$),3,720,0.2891473737213055,0.5486464837352845
+4,delta_Coal consumption_lag16,delta_Coal consumption,4,696,0.2893992271573473,0.43453043316344075
+5,delta_Surface area (sq. km)_lag19,delta_Surface area (sq. km),5,672,0.21137218164060204,0.3633687052782928
+6,delta_Energy use_lag11,delta_Energy use,6,648,0.20506928084661977,0.3055241661878729
+7,delta_u10_lag17,delta_u10,7,624,0.2202467842255481,0.3040205126572848
+8,"delta_Unemployment, total (% of total labor force) (national estimate)_lag18","delta_Unemployment, total (% of total labor force) (national estimate)",8,600,0.2292204684610241,0.2834181233344739

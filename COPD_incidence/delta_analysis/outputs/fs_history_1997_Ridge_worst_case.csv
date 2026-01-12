@@ -1,0 +1,13 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_sst_lag4,delta_sst,1,224,2.071439929006246,4.779252180898248
+2,delta_u10_lag5,delta_u10,2,217,1.7741793748593715,3.9444171867468123
+3,delta_v10_lag3,delta_v10,3,210,1.6789835294284337,3.3511995035642133
+4,delta_Access to electricity (% of population)_lag1,delta_Access to electricity (% of population),4,203,1.6266901884325868,2.8756893469807423
+5,delta_Oil consumption_lag1,delta_Oil consumption,5,196,1.6157710247232075,2.6571376477624327
+6,delta_Renewable electricity output (% of total electricity output)_lag4,delta_Renewable electricity output (% of total electricity output),6,189,1.3344925129090472,2.55739561675579
+7,delta_Surface area (sq. km)_lag5,delta_Surface area (sq. km),7,182,1.3349856712878128,2.3468910840703128
+8,delta_Sulfur emission_lag6,delta_Sulfur emission,8,175,1.3824954885030274,2.302670124830792
+9,"delta_Unemployment, total (% of total labor force) (national estimate)_lag7","delta_Unemployment, total (% of total labor force) (national estimate)",9,168,1.2607806771042496,2.224555836343196
+10,"delta_Life expectancy at birth, total (years)_lag1","delta_Life expectancy at birth, total (years)",10,161,1.2690167813115407,2.144756196684245
+11,delta_Raw materials extracted_lag6,delta_Raw materials extracted,11,154,1.2925030282989376,2.144342825744908
+12,"delta_Compulsory education, duration (years)_lag1","delta_Compulsory education, duration (years)",12,147,1.2925030282989374,2.144342825744907

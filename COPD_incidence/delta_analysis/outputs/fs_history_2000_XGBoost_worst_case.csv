@@ -1,0 +1,5 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,"delta_Mortality rate, infant (per 1,000 live births)_lag4","delta_Mortality rate, infant (per 1,000 live births)",1,320,1.7161104030451626,2.7274968708658776
+2,delta_GDP (current US$)_lag9,delta_GDP (current US$),2,310,1.808391663007827,2.6523907269144615
+3,delta_sst_lag2,delta_sst,3,300,1.2484087567271538,2.6464252556467613
+4,delta_Sulfur emission_lag5,delta_Sulfur emission,4,290,1.2590466738787454,2.6461227024698815

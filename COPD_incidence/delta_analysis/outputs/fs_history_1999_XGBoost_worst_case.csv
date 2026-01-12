@@ -1,0 +1,7 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_GDP per capita (constant 2015 US$)_lag9,delta_GDP per capita (constant 2015 US$),1,288,2.014107530191432,4.104369703652367
+2,delta_d2m_lag1,delta_d2m,2,279,1.4603581423424081,3.2319487993913754
+3,delta_Sulfur emission_lag6,delta_Sulfur emission,3,270,1.4060766374616858,2.9068189447319526
+4,delta_t2m_lag1,delta_t2m,4,261,1.3945312926793931,2.4594487612444027
+5,"delta_Mortality rate, infant (per 1,000 live births)_lag8","delta_Mortality rate, infant (per 1,000 live births)",5,252,1.3973702879494179,2.3991840665733832
+6,delta_Access to electricity (% of population)_lag5,delta_Access to electricity (% of population),6,243,1.386245265942171,2.3710246545219604

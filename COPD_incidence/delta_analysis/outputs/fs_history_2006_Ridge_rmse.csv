@@ -1,0 +1,9 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,"delta_Unemployment, total (% of total labor force) (national estimate)_lag15","delta_Unemployment, total (% of total labor force) (national estimate)",1,512,1.9902115943717058,5.1936627893353915
+2,delta_CO2 emissions_lag12,delta_CO2 emissions,2,496,1.0647739343482665,2.710219075539409
+3,delta_Natural gas production_x_lag10,delta_Natural gas production_x,3,480,0.39444799640325795,0.7266182471982575
+4,delta_Energy use_lag8,delta_Energy use,4,464,0.3666264963508972,0.6968844663387985
+5,delta_t2m_lag1,delta_t2m,5,448,0.3611619052259531,0.6767326263126383
+6,delta_People using at least basic sanitation services (% of population)_lag2,delta_People using at least basic sanitation services (% of population),6,432,0.3611231097502462,0.6811125857793208
+7,delta_Access to clean fuels and technologies for cooking (% of population)_lag5,delta_Access to clean fuels and technologies for cooking (% of population),7,416,0.35957765459162144,0.654008327331951
+8,"delta_Mortality rate, infant (per 1,000 live births)_lag8","delta_Mortality rate, infant (per 1,000 live births)",8,400,0.356100717354661,0.6457587869150894

@@ -1,0 +1,4 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_Coal consumption_lag1,delta_Coal consumption,1,32,2.082065504881416,5.483332360249165
+2,delta_u10_lag1,delta_u10,2,31,1.6607393179169905,3.545098062391162
+3,delta_Access to clean fuels and technologies for cooking (% of population)_lag1,delta_Access to clean fuels and technologies for cooking (% of population),3,30,1.6596400329208971,3.545098062391162

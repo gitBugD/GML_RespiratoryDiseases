@@ -1,0 +1,8 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_CO2 emissions_lag2,delta_CO2 emissions,1,544,2.5353112291895377,4.766985311151452
+2,delta_blh_lag14,delta_blh,2,527,1.6188742729366183,2.557995353909366
+3,delta_People using at least basic sanitation services (% of population)_lag7,delta_People using at least basic sanitation services (% of population),3,510,0.9915750893165121,1.6384951843532218
+4,delta_Raw materials extracted_lag15,delta_Raw materials extracted,4,493,0.7265379927808364,1.1074226341448863
+5,delta_t2m_lag8,delta_t2m,5,476,0.7034599286489023,0.9310745161982189
+6,delta_v10_lag1,delta_v10,6,459,0.7047465958907162,0.911528757162546
+7,delta_Coal consumption_lag3,delta_Coal consumption,7,442,0.7004397756566699,0.9001479805778103

@@ -1,0 +1,8 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_u10_lag1,delta_u10,1,32,1.964227373608666,4.844762508841384
+2,delta_Sulfur emission_lag1,delta_Sulfur emission,2,31,1.9091261978521668,4.141683736389324
+3,delta_Access to clean fuels and technologies for cooking (% of population)_lag1,delta_Access to clean fuels and technologies for cooking (% of population),3,30,1.920773053837895,3.987818517897717
+4,delta_Renewable electricity output (% of total electricity output)_lag1,delta_Renewable electricity output (% of total electricity output),4,29,1.953189569363049,3.931635062992042
+5,delta_Surface area (sq. km)_lag1,delta_Surface area (sq. km),5,28,1.9694449787605408,3.853765069527467
+6,delta_Access to electricity (% of population)_lag1,delta_Access to electricity (% of population),6,27,2.005471386976916,3.7627743714531388
+7,delta_Natural gas production_y_lag1,delta_Natural gas production_y,7,26,2.0323408301772945,3.6267771747173083

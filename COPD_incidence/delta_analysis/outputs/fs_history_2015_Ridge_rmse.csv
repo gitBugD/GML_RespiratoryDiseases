@@ -1,0 +1,6 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_CO2 emissions_lag2,delta_CO2 emissions,1,768,0.9260915338484359,2.032415815241234
+2,"delta_Unemployment, total (% of total labor force) (national estimate)_lag9","delta_Unemployment, total (% of total labor force) (national estimate)",2,744,0.6348910027671737,1.3483025741648365
+3,delta_Natural gas production_x_lag3,delta_Natural gas production_x,3,720,0.4792990648949125,0.950535464111252
+4,delta_Gini index_lag8,delta_Gini index,4,696,0.449594221005234,0.663637158729097
+5,delta_Raw materials extracted_lag1,delta_Raw materials extracted,5,672,0.38258290360295194,0.6491639933691946

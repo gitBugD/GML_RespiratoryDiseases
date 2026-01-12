@@ -1,0 +1,8 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_Gini index_lag11,delta_Gini index,1,608,1.8070674245795066,2.5366770887317807
+2,delta_CO2 emissions_lag10,delta_CO2 emissions,2,589,1.2151330899860304,1.7782602054939514
+3,delta_skt_lag5,delta_skt,3,570,0.7979220195161978,1.1993625820402918
+4,delta_Access to electricity (% of population)_lag6,delta_Access to electricity (% of population),4,551,0.5531165213759872,0.8802875037297317
+5,delta_Natural gas production_y_lag2,delta_Natural gas production_y,5,532,0.3293093708167832,0.576173904739925
+6,delta_Raw materials extracted_lag7,delta_Raw materials extracted,6,513,0.33760187699692107,0.5548218293642315
+7,delta_Oil consumption_lag15,delta_Oil consumption,7,494,0.37417611232433384,0.5386065839330403

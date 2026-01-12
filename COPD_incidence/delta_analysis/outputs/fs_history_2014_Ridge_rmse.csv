@@ -1,0 +1,8 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_Oil consumption_lag21,delta_Oil consumption,1,736,1.442923830187,2.8579829614621137
+2,"delta_Unemployment, total (% of total labor force) (national estimate)_lag3","delta_Unemployment, total (% of total labor force) (national estimate)",2,713,0.8682652376351799,1.8035864430163566
+3,delta_Natural gas production_x_lag20,delta_Natural gas production_x,3,690,0.5348012712094685,1.2098997480424512
+4,"delta_Life expectancy at birth, total (years)_lag23","delta_Life expectancy at birth, total (years)",4,667,0.524463215409937,1.127228791574625
+5,delta_Renewable electricity output (% of total electricity output)_lag15,delta_Renewable electricity output (% of total electricity output),5,644,0.41175378974629084,0.8303802831881857
+6,delta_Sulfur emission_lag20,delta_Sulfur emission,6,621,0.3813110280447935,0.8761170556411813
+7,delta_Gini index_lag6,delta_Gini index,7,598,0.3615598725341478,0.8815939413581901

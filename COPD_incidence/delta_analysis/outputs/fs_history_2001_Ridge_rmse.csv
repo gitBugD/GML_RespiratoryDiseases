@@ -1,0 +1,6 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_blh_lag1,delta_blh,1,352,1.4976888751427877,2.971921549205276
+2,"delta_Unemployment, total (% of total labor force) (national estimate)_lag10","delta_Unemployment, total (% of total labor force) (national estimate)",2,341,1.1178904375972025,2.212190058525336
+3,delta_v10_lag3,delta_v10,3,330,0.7323723239278205,1.5564070800786614
+4,delta_Natural gas production_y_lag6,delta_Natural gas production_y,4,319,0.4678794799365635,0.8636666154316384
+5,delta_Surface area (sq. km)_lag6,delta_Surface area (sq. km),5,308,0.3810115239073006,0.8416199389784997

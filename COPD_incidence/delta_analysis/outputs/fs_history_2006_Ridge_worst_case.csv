@@ -1,0 +1,7 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_CO2 emissions_lag1,delta_CO2 emissions,1,512,2.240095042881776,4.114786586176339
+2,delta_blh_lag13,delta_blh,2,496,1.3787568921139455,2.3541850277785983
+3,delta_Access to electricity (% of population)_lag6,delta_Access to electricity (% of population),3,480,0.9155507188212052,1.4078272457397198
+4,delta_skt_lag4,delta_skt,4,464,0.6870708061068386,1.0090112412267054
+5,"delta_Population, total_lag5","delta_Population, total",5,448,0.6687190676832615,0.9866077147494043
+6,delta_Electricity use_lag4,delta_Electricity use,6,432,0.7588629962025567,0.9557509442080292

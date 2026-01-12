@@ -1,0 +1,5 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_Oil consumption_lag21,delta_Oil consumption,1,736,1.7833687067512667,2.553343955655862
+2,delta_t2m_lag18,delta_t2m,2,713,1.784508729243023,2.5289653579195033
+3,delta_Gini index_lag14,delta_Gini index,3,690,1.7774370827514585,2.5252125004728327
+4,delta_Raw materials extracted_lag14,delta_Raw materials extracted,4,667,1.8163129945088545,2.5249469021757136

@@ -1,0 +1,7 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,"delta_Mortality rate, infant (per 1,000 live births)_lag18","delta_Mortality rate, infant (per 1,000 live births)",1,768,0.523568957042433,0.987741000021515
+2,delta_sp_lag15,delta_sp,2,744,0.5845721694389503,0.807741171682892
+3,delta_Raw materials extracted_lag22,delta_Raw materials extracted,3,720,0.6276751442644116,0.8029137255090291
+4,delta_Oil consumption_lag8,delta_Oil consumption,4,696,0.625774293883007,0.7987015312562562
+5,delta_PM2.5 pollution_lag2,delta_PM2.5 pollution,5,672,0.6342860439059994,0.7983586853395082
+6,delta_v10_lag20,delta_v10,6,648,0.6357584243791067,0.7981429165254212

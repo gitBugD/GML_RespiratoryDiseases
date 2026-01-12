@@ -1,0 +1,5 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_u10_lag1,delta_u10,1,224,2.4368740283274146,4.947620378331351
+2,delta_v10_lag1,delta_v10,2,217,1.9045499570348634,4.432167476177995
+3,delta_Electricity use_lag6,delta_Electricity use,3,210,1.9965744952050386,4.283275729180161
+4,"delta_Life expectancy at birth, total (years)_lag6","delta_Life expectancy at birth, total (years)",4,203,1.9295160651394805,4.055599754811112

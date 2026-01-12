@@ -1,0 +1,6 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_Surface area (sq. km)_lag24,delta_Surface area (sq. km),1,832,1.7489581451239762,2.8526476793160445
+2,delta_GDP per capita (constant 2015 US$)_lag2,delta_GDP per capita (constant 2015 US$),2,806,0.9066640435538644,1.4911172402023638
+3,delta_Oil consumption_lag7,delta_Oil consumption,3,780,0.7760749794652204,1.0426125966357405
+4,delta_Natural gas production_x_lag11,delta_Natural gas production_x,4,754,0.7123649245531565,1.0226400062583054
+5,"delta_Life expectancy at birth, total (years)_lag21","delta_Life expectancy at birth, total (years)",5,728,0.7442706229120035,0.99228551468028

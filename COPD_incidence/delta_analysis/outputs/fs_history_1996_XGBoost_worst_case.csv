@@ -1,0 +1,7 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_skt_lag2,delta_skt,1,192,2.2634895685729504,4.556566921759753
+2,delta_Gini index_lag2,delta_Gini index,2,186,2.048403123720801,3.9194569336547147
+3,delta_Electricity use_lag4,delta_Electricity use,3,180,1.7626464599345029,3.702096013239668
+4,delta_sp_lag2,delta_sp,4,174,1.6537462618838805,3.5235893589346574
+5,delta_Surface area (sq. km)_lag4,delta_Surface area (sq. km),5,168,1.6362545016668306,3.341806487449901
+6,delta_Oil consumption_lag6,delta_Oil consumption,6,162,1.4946200266794778,3.3373174530356096

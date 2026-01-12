@@ -1,0 +1,5 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_Raw materials extracted_lag1,delta_Raw materials extracted,1,864,1.428015659820031,2.234749449414032
+2,delta_Coal consumption_lag7,delta_Coal consumption,2,837,0.7442725936911725,1.0186771572983544
+3,delta_Sulfur emission_lag25,delta_Sulfur emission,3,810,0.6064878593990835,0.7834906733966509
+4,delta_d2m_lag26,delta_d2m,4,783,0.6208171136755892,0.7249266917784003

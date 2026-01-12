@@ -1,0 +1,20 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_u10_lag3,delta_u10,1,96,1.596161886096132,3.45890179693111
+2,delta_sp_lag1,delta_sp,2,93,1.3898778857836205,2.3220043481393975
+3,delta_Electricity use_lag1,delta_Electricity use,3,90,1.2993997955799703,2.3085945288925753
+4,"delta_Mortality rate, infant (per 1,000 live births)_lag3","delta_Mortality rate, infant (per 1,000 live births)",4,87,1.1448811936089276,2.0562055773945587
+5,"delta_Unemployment, total (% of total labor force) (national estimate)_lag2","delta_Unemployment, total (% of total labor force) (national estimate)",5,84,1.070130929468517,2.5149752307567743
+6,delta_Access to electricity (% of population)_lag1,delta_Access to electricity (% of population),6,81,1.0304963629551167,2.5342643536238123
+7,delta_blh_lag1,delta_blh,7,78,0.9628806989099029,2.35530859086174
+8,delta_Oil consumption_lag3,delta_Oil consumption,8,75,0.9582290587996577,2.4527959522829303
+9,delta_v10_lag3,delta_v10,9,72,0.940671771352692,2.3585203140352267
+10,delta_Renewable electricity output (% of total electricity output)_lag2,delta_Renewable electricity output (% of total electricity output),10,69,0.9145674472962162,2.4368844931362466
+11,delta_Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)_lag2,delta_Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita),11,66,0.8756522958186949,2.438961157145937
+12,delta_Natural gas production_x_lag2,delta_Natural gas production_x,12,63,0.8179721228558438,2.299965471267437
+13,delta_Raw materials extracted_lag3,delta_Raw materials extracted,13,60,0.790594488425927,2.2624420570372363
+14,delta_Energy use_lag2,delta_Energy use,14,57,0.7561459922617693,2.0806499507882266
+15,delta_sst_lag1,delta_sst,15,54,0.7526197644350159,1.9556163052353641
+16,delta_t2m_lag1,delta_t2m,16,51,0.6462150805000705,1.7210116012673482
+17,delta_Sulfur emission_lag1,delta_Sulfur emission,17,48,0.6337945915302856,1.722597010889083
+18,delta_Surface area (sq. km)_lag2,delta_Surface area (sq. km),18,45,0.6208110669027199,1.6880424307728332
+19,"delta_Compulsory education, duration (years)_lag1","delta_Compulsory education, duration (years)",19,42,0.6208110669027198,1.6880424307728332

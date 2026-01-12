@@ -1,0 +1,7 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_Gini index_lag7,delta_Gini index,1,480,1.467342700875212,2.5672412792670527
+2,"delta_Unemployment, total (% of total labor force) (national estimate)_lag14","delta_Unemployment, total (% of total labor force) (national estimate)",2,465,1.0339983436856595,1.7448910431506592
+3,delta_PM2.5 pollution_lag1,delta_PM2.5 pollution,3,450,0.5610348982254465,1.1089022879084105
+4,delta_CO2 emissions_lag4,delta_CO2 emissions,4,435,0.3934613789864088,0.8064866090024179
+5,delta_Access to electricity (% of population)_lag2,delta_Access to electricity (% of population),5,420,0.2744983156965788,0.5884357210711983
+6,delta_t2m_lag1,delta_t2m,6,405,0.236247829098987,0.5184995432636597

@@ -1,0 +1,5 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,"delta_Mortality rate, infant (per 1,000 live births)_lag3","delta_Mortality rate, infant (per 1,000 live births)",1,608,2.0835729705133255,4.04265101162477
+2,delta_Raw materials extracted_lag15,delta_Raw materials extracted,2,589,1.7227762519839493,4.060415281930403
+3,delta_Gini index_lag19,delta_Gini index,3,570,1.7118092462274435,4.08951528278871
+4,delta_GDP (current US$)_lag1,delta_GDP (current US$),4,551,1.7094284773028137,4.08951528278871

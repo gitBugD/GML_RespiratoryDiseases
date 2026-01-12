@@ -1,0 +1,5 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_Surface area (sq. km)_lag14,delta_Surface area (sq. km),1,800,1.4064351768901422,2.553715931949366
+2,delta_CO2 emissions_lag10,delta_CO2 emissions,2,775,1.1394268893811699,1.6002005057505264
+3,"delta_Unemployment, total (% of total labor force) (national estimate)_lag22","delta_Unemployment, total (% of total labor force) (national estimate)",3,750,1.0063101194382693,1.2836585278823096
+4,delta_v10_lag15,delta_v10,4,725,0.7471333380389841,1.0459026397776836

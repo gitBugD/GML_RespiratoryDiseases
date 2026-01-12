@@ -1,0 +1,10 @@
+step,selected_feature,family,n_selected,n_remaining,rmse,worst_case
+1,delta_u10_lag3,delta_u10,1,96,1.596161886096132,3.45890179693111
+2,delta_sp_lag1,delta_sp,2,93,1.3898778857836205,2.3220043481393975
+3,delta_sst_lag3,delta_sst,3,90,1.4071003070059396,2.2927298466259316
+4,delta_Sulfur emission_lag1,delta_Sulfur emission,4,87,1.4305992934134437,2.2917285445119706
+5,delta_Electricity use_lag1,delta_Electricity use,5,84,1.342690635084745,2.2832676445285394
+6,delta_d2m_lag1,delta_d2m,6,81,1.3457107689131558,2.2585734904252046
+7,delta_t2m_lag1,delta_t2m,7,78,1.2961202606351558,2.2540404270343233
+8,delta_Natural gas production_x_lag2,delta_Natural gas production_x,8,75,1.3006642680626315,2.2066635575346427
+9,delta_skt_lag3,delta_skt,9,72,1.3321705787690867,2.1931431064712377
